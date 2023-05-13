@@ -1,0 +1,60 @@
+<div class="container py-3 ">
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+        <img src="https://media.graphassets.com/EpSnBUJPSmKJNYoOtvv3" 
+            width="140" 
+            height="50" 
+            class="me-2" 
+        />
+        
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+
+        {{#if isHome}}
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none text-success" href="/">Home</a>
+        {{else}}
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/">Home</a>
+        {{/if}}
+
+        {{#if isMarket}}
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none text-success" href="/market">Market</a>
+        {{else}}
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/market">Market</a>
+        {{/if}}
+
+        {{#if isAdd}}
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none text-success" href="/add">Add</a>
+        {{else}}
+          <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/add">Add</a>
+        {{/if}}
+       
+        
+        
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+          {{#if isLogin}}
+            <button type="button" class="btn btn-primary active">
+                <a class="text-light text-decoration-none" href="/login">Login</a>
+            </button>
+          {{else}}
+            <button type="button" class="btn btn-primary">
+                <a class="text-light text-decoration-none" href="/login">Login</a>
+            </button>          
+          {{/if}}
+
+          {{#if isRegister}}
+            <button type="button" class="btn btn-success active">
+                <a class="text-light text-decoration-none" href="/register">Register</a>
+            </button>
+          {{else}}
+            <button type="button" class="btn btn-success">
+                <a class="text-light text-decoration-none" href="/register">Register</a>
+            </button>
+          {{/if}}
+              
+        </div>      
+      </nav>
+    </div>
+    </header>
+</div>
